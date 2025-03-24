@@ -21,6 +21,7 @@
     <input type="text" name="altura" id="altura" required><br><br>
 
     <button type="submit">Calcular IMC</button>
+    <a href="{{ route('dashboard') }}">Voltar ao dashboard</a>
 </form>
 
 </body>

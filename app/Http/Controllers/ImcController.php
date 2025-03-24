@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Models\ImcRecord; // Importar o modelo
 use Illuminate\Http\Request;
 
 class ImcController extends Controller
@@ -29,6 +30,15 @@ class ImcController extends Controller
         } else {
             $classificacao = 'Obesidade';
         }
+
+        // Salvar os dados no banco de dados
+        ImcRecord::create([
+            'nome' => $nome,
+            'peso' => $peso,
+            'altura' => $altura,
+            'imc' => $imc,
+            'classificacao' => $classificacao,
+        ]);
     
         // Retornar a view com os dados
         return view('imc.result', [
@@ -39,5 +49,4 @@ class ImcController extends Controller
             'classificacao' => $classificacao
         ]);
     }
-    
 }

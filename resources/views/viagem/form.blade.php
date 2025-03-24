@@ -1,4 +1,4 @@
-<!-- resources/views/viagem/form.blade.php -->
+
 <form action="{{ route('viagem.calculate') }}" method="POST" novalidate>
     @csrf
     <label for="distancia">Distância (km):</label>
@@ -11,4 +11,5 @@
     <input type="text" id="consumo_veiculo" name="consumo_veiculo" required>
 
     <button type="submit">Calcular Gasto</button>
+    <a href="{{ route('dashboard') }}">Voltar ao dashboard</a>
 </form>

@@ -14,5 +14,6 @@
     <p><strong>Classificação:</strong> {{ $classificacao }}</p>
 
     <a href="{{ route('imc.form') }}">Voltar</a>
+    <a href="{{ route('dashboard') }}">Voltar ao dashboard</a>
 </body>
 </html>
