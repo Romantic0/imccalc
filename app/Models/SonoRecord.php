@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class SonoRecord extends Model
 {
 
-    protected $fillable = ['horas', 'avaliacao'];
+    protected $fillable = ['horas', 'avaliacao', 'idade'];
 }

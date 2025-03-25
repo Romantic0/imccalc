@@ -4,24 +4,22 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateSonoRecordsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
-        Schema::create('sono_records', function (Blueprint $table) {
+        schema::Create('sono_records', function (Blueprint $table){
             $table->id();
+            $table->integer('horas');
+            $table->string('avaliacao');
+            $table->integer('idade');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('sono_records');
+        schema::dropIfExists('sono_records');
     }
-};
+
+}

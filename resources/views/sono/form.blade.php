@@ -12,6 +12,8 @@
 
 <label for="hora">Horas de sono:</label>
 <input type="text" name="horas" id="horas" required><br><br>
+<label for="idade">idade</label>
+<input type="text" name="idade" id="idade" required><br><br>
 
 <button type="submit">Calcular sono</button>
 <a href="{{ route('dashboard') }}">Voltar ao dashboard</a>

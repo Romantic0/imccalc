@@ -40,6 +40,7 @@
                 </tr>
             @endforeach
         </tbody>
+      
     </table>
 
 
@@ -68,6 +69,26 @@
         @endforeach
     </tbody>
 </table>
+<h2>sono</h2>
+<table>
+ <thead>
+        <tr>
+            <th>horas</th>
+            <th>idade</th>
+            <th>avaliação</th>
+           
+        </tr>
+  </thead>  
+    <tbody>
+            @foreach($sonorecords as $record)
+                <tr>
+                    <td>{{ $record->horas}}</td>
+                    <td>{{ $record->idade }}</td>
+                    <td>{{ $record->avaliacao }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
 
 </body>
 </html>

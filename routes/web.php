@@ -5,6 +5,8 @@ use App\Http\Controllers\viagemcontroller;
 use App\Models\ImcRecord;
 use App\Models\ViagemRecord;
 use App\Http\Controllers\SonoController;
+use App\Models\SonoRecord;
+
 use function Laravel\Prompts\form;
 
 // routes/web.php
@@ -12,9 +14,10 @@ use function Laravel\Prompts\form;
 Route::get('/dashboard', function () {
     $imcRecords = ImcRecord::all(); // Registros de IMC
     $viagemRecords = ViagemRecord::all(); // Registros de Viagem
+    $sonorecords = SonoRecord::all();
     
     // Passar ambos os registros para a view
-    return view('dashboard', compact('imcRecords', 'viagemRecords'));
+    return view('dashboard', compact('imcRecords', 'viagemRecords', 'sonorecords'));
 })->name('dashboard');
 
 
