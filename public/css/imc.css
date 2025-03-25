@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contêiner centralizado */
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #ff00dd;
+    margin-bottom: 15px;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #ff00dd;
+    outline: none;
+}
+
+/* Botão de envio */
+form button {
+    background-color: #ff00dd;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ff00dd;
+    transform: scale(1.03);
+}
+
+/* Links */
+.form-links {
+    margin-top: 15px;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: #ff00dd;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.form-links a:hover {
+    color: #ff00dd;
+}
+
+/* Estilo do resultado */
+.resultado-imc {
+    width: 100%;
+    max-width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resultado-imc p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.resultado-imc a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff00dd;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resultado-imc a:hover {
+    color: #ff00dd;
+}

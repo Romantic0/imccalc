@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado IMC</title>
+    <link rel="stylesheet" href="{{ asset('css/imc.css') }}">
 </head>
-<body>
+<div class="resultado-imc">
     <h1>Resultado do IMC</h1>
     <p><strong>Nome:</strong> {{ $nome }}</p>
     <p><strong>Peso:</strong> {{ $peso }} kg</p>
@@ -15,5 +16,6 @@
 
     <a href="{{ route('imc.form') }}">Voltar</a>
     <a href="{{ route('dashboard') }}">Voltar ao dashboard</a>
-</body>
+</div>
+
 </html>
