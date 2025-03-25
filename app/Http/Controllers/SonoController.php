@@ -21,7 +21,7 @@ class SonoController extends Controller
             $avaliacao = 'esta dormindo mal';
             
         }else{
-            'esta dormindo bem';
+            $avaliacao = 'esta dormindo bem';
         }
 
         return view('sono.result', [

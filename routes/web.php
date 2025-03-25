@@ -4,8 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\viagemcontroller;
 use App\Models\ImcRecord;
 use App\Models\ViagemRecord;
-use App\Models\SonoController;
-
+use App\Http\Controllers\SonoController;
 use function Laravel\Prompts\form;
 
 // routes/web.php
