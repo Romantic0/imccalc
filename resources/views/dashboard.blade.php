@@ -1,4 +1,4 @@
-<!-- resources/views/dashboard.blade.php -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,14 +14,15 @@
     <div>
         <h2>Escolha uma opção:</h2>
         <ul>
-            <li><a href="{{ route('imc.form') }}">Calcular IMC</a></li>
-            <li><a href="{{ route('viagem.form') }}">Calcular gasto com viagem</a></li>
-            <li><a href="{{ route('sono.form') }}">Calcular sono</a></li>
+           <li><a class="btn-imc" href="{{ route('imc.form') }}">Calcular IMC</a></li>
+           <li><a class="btn-viagem" href="{{ route('viagem.form') }}">Calcular gasto com viagem</a></li>
+           <li><a class="btn-sono" href="{{ route('sono.form') }}">Calcular sono</a></li>
         </ul>
+
     </div>
 
     <h2>Registros de IMC</h2>
-    <table>
+    <table class="tabela-imc">
         <thead>
             <tr>
                 <th>Nome</th>
@@ -49,7 +50,7 @@
     
 
 <h2>Registros de Viagem</h2>
-<table>
+<table class="tabela-viagem">
     <thead>
         <tr>
             <th>Distância (km)</th>
@@ -72,7 +73,7 @@
     </tbody>
 </table>
 <h2>Avaliação de Sono</h2>
-<table>
+<table class="tabela-sono">
  <thead>
         <tr>
             <th>horas</th>

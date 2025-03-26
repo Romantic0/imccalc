@@ -30,7 +30,7 @@ body {
 /* Título */
 h1 {
     font-size: 2rem;
-    color: #ff00dd;
+    color: #9432cd;
     margin-bottom: 15px;
 }
 
@@ -58,13 +58,13 @@ form input[type="text"] {
 }
 
 form input:focus {
-    border-color: #ff00dd;
+    border-color: #9432cd;
     outline: none;
 }
 
 /* Botão de envio */
 form button {
-    background-color: #ff00dd;
+    background-color: #9432cd;
     color: white;
     border: none;
     padding: 12px;
@@ -76,7 +76,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #ff00dd;
+    background-color: #9432cd;
     transform: scale(1.03);
 }
 
@@ -87,14 +87,14 @@ form button:hover {
 
 .form-links a {
     text-decoration: none;
-    color: #ff00dd;
+    color: #9432cd;
     font-weight: bold;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
 .form-links a:hover {
-    color: #ff00dd;
+    color: #9432cd;
 }
 
 /* Estilo do resultado */
@@ -117,11 +117,11 @@ form button:hover {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    color: #ff00dd;
+    color: #9432cd;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .resultado a:hover {
-    color: #ff00dd;
+    color: #9432cd;
 }
