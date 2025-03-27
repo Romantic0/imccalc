@@ -26,6 +26,7 @@
         <thead>
             <tr>
                 <th>Nome</th>
+                <th>Data de nascimento</th>
                 <th>Peso</th>
                 <th>Altura</th>
                 <th>IMC</th>
@@ -36,6 +37,7 @@
             @foreach($imcRecords as $record)
                 <tr>
                     <td>{{ $record->nome }}</td>
+                    <td>{{ \Carbon\Carbon::parse($record->data_nascimento)->format('d/m/Y') }}</td>
                     <td>{{ $record->peso }}</td>
                     <td>{{ $record->altura }}</td>
                     <td>{{ number_format($record->imc, 2) }}</td>

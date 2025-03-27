@@ -16,6 +16,8 @@ class ImcController extends Controller
         $nome = $request->input('nome');
         $peso = $request->input('peso');
         $altura = $request->input('altura');
+        $dataNascimento = $request->input('data_nascimento');
+
     
         // Calcular o IMC
         $imc = $peso / ($altura * $altura);
@@ -34,6 +36,7 @@ class ImcController extends Controller
         // Salvar os dados no banco de dados
         ImcRecord::create([
             'nome' => $nome,
+            'data_nascimento' => $dataNascimento,
             'peso' => $peso,
             'altura' => $altura,
             'imc' => $imc,
@@ -43,6 +46,7 @@ class ImcController extends Controller
         // Retornar a view com os dados
         return view('imc.result', [
             'nome' => $nome,
+            'data_nascimento' => $dataNascimento,
             'peso' => $peso,
             'altura' => $altura,
             'imc' => number_format($imc, 2),

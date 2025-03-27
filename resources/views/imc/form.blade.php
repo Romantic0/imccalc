@@ -15,6 +15,9 @@
         <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" required>
 
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" name="data_nascimento" id="data_nascimento" required>
+
         <label for="peso">Peso (kg):</label>
         <input type="text" name="peso" id="peso" required>
 

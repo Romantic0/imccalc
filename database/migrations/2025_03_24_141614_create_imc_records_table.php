@@ -17,6 +17,7 @@ class CreateImcRecordsTable extends Migration
             $table->float('altura');
             $table->float('imc');
             $table->string('classificacao');
+            $table->date('data_nascimento')->nullable();
             $table->timestamps();
         });
     }

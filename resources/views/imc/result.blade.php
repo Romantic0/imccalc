@@ -9,6 +9,7 @@
 <div class="resultado-imc">
     <h1>Resultado do IMC</h1>
     <p><strong>Nome:</strong> {{ $nome }}</p>
+    <p><strong>Data de nascimento:</strong>  {{ \Carbon\Carbon::parse($data_nascimento)->format('d/m/Y') }}</p>
     <p><strong>Peso:</strong> {{ $peso }} kg</p>
     <p><strong>Altura:</strong> {{ $altura }} m</p>
     <p><strong>IMC:</strong> {{ $imc }}</p>
